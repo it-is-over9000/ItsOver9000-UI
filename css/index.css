@@ -174,3 +174,31 @@ img {
     margin: 0 5%;
   }
 }
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+.main-nav .nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 1% 0;
+  border-bottom: 1px solid white;
+}
+.main-nav .nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  height: 100%;
+  background: url("../img/board-playing.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
