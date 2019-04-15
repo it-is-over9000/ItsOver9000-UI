@@ -4,15 +4,54 @@ body, html {
 
 }
 
-.bg {
+.bg-container {
 	height: 100%; 
 	background: url("../img/board-playing.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	
-}
+	.logo-btn-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		.logo {
+			margin-top: 160px;
+			margin-right: 16px;
+			position: relative;
 
-.home {
-	
+			.knight-head {
+				width: 16rem;
+				position:absolute;
+				transform: scaleX(-1);
+
+			}
+
+			.knight-body {
+				width: 16rem;
+				position:relative;
+				transform: scaleX(-1);
+
+			}
+		}
+
+		.log-in-btn {
+			height: 50px;
+			width: 150px;
+			margin-top: 4%;
+			font-size: 2.5rem;
+			color: white;
+			background-color: @homeBG-color;
+			border: 1px solid white;
+			border-radius: 30px;
+
+			&:hover {
+				color: @homeBG-color;
+				background-color: white;
+				border: 1px solid @homeBG-color;
+			}
+		}
+	}
 }
