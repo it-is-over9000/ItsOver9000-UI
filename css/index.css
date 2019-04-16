@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -188,12 +188,21 @@ img {
   border-bottom-right-radius: 50px;
   background-color: #151924;
   position: fixed;
-  z-index: 1;
+  opacity: 0.95;
+  z-index: 10;
 }
 .main-nav .nav a {
+  margin-bottom: 3px;
   text-decoration: none;
   font-size: 2rem;
   color: white;
+}
+.main-nav .nav a:hover {
+  border-bottom: 1.5px solid white;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-bottom: 0;
+  padding-bottom: 1.5px;
 }
 body,
 html {
@@ -207,39 +216,197 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.bg-container .logo-btn-container {
+.bg-container-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.bg-container-content .left-section {
+  width: 33%;
+  opacity: 0;
+}
+.bg-container-content .left-section h1 {
+  margin-top: 30%;
+  margin-left: 50%;
+  width: 100%;
+  color: white;
+  font-size: 8rem;
+}
+.bg-container-content .logo-btn-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 33%;
 }
-.bg-container .logo-btn-container .logo {
-  margin-top: 160px;
+.bg-container-content .logo-btn-container .logo {
+  margin-top: 30%;
   margin-right: 16px;
   position: relative;
 }
-.bg-container .logo-btn-container .logo .knight-head {
+.bg-container-content .logo-btn-container .logo .knight-head {
   width: 16rem;
   position: absolute;
   transform: scaleX(-1);
+  opacity: 0;
 }
-.bg-container .logo-btn-container .logo .knight-body {
+.bg-container-content .logo-btn-container .logo .knight-seperator {
   width: 16rem;
-  position: relative;
+  position: absolute;
+  z-index: 1;
   transform: scaleX(-1);
 }
-.bg-container .logo-btn-container .log-in-btn {
+.bg-container-content .logo-btn-container .logo .knight-body {
+  width: 16rem;
+  transform: scaleX(-1);
+  opacity: 0;
+}
+.bg-container-content .logo-btn-container .log-in-btn {
   height: 50px;
-  width: 150px;
+  width: 160px;
   margin-top: 4%;
   font-size: 2.5rem;
   color: white;
   background-color: #151924;
-  border: 1px solid white;
+  border: 3.5px solid white;
   border-radius: 30px;
+  opacity: 0;
 }
-.bg-container .logo-btn-container .log-in-btn:hover {
+.bg-container-content .logo-btn-container .log-in-btn:hover {
   color: #151924;
   background-color: white;
   border: 1px solid #151924;
+}
+.bg-container-content .right-section {
+  width: 33%;
+}
+.bg-container-content .right-section .log-in-panel {
+  width: 36%;
+  max-height: 100%;
+  margin-top: 30%;
+  margin-left: 15%;
+  padding: 4%;
+  background-color: white;
+  color: #151924;
+  border-radius: 30px;
+  opacity: 0;
+}
+.bg-container-content .right-section .log-in-panel h3 {
+  font-size: 1.4rem;
+  line-height: 0;
+}
+.bg-container-content .right-section .log-in-panel input {
+  width: 100%;
+  height: 28px;
+  padding-left: 6px;
+  border: 1px solid #151924;
+  border-radius: 4px;
+  outline-color: #151924;
+}
+.bg-container-content .right-section .log-in-panel .user-name {
+  margin-top: 6%;
+}
+.bg-container-content .right-section .log-in-panel .password {
+  margin-top: 10%;
+}
+.bg-container-content .right-section .log-in-panel .submit {
+  height: 50px;
+  width: 100%;
+  margin-top: 10%;
+  border: 1.5px solid #151924;
+  border-radius: 20px;
+  background-color: white;
+  color: #151924;
+  font-size: 2.5rem;
+}
+.bg-container-content .right-section .log-in-panel .submit:hover {
+  border: 3.5px solid #151924;
+  background-color: #151924;
+  color: white;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .about-us {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 50%;
+  margin: 3% 0;
+}
+.home .about-us .about-us-h2 {
+  width: 49%;
+  align-self: center;
+}
+.home .about-us .about-us-content {
+  width: 49%;
+}
+.home .about-us .about-us-content h3 {
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.home .carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+  border-top: 4px solid #151924;
+}
+.home .carousel-container h2 {
+  padding: 1% 0;
+}
+.home .carousel-container .features {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .carousel-container .features .feature {
+  width: 38%;
+  display: none;
+}
+.home .carousel-container .features .feature-1 {
+  display: block;
+}
+.home .carousel-container .carousel {
+  width: 60%;
+}
+.home .team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #151924;
+}
+.home .team-section h2 {
+  margin: 4% 0;
+  color: white;
+}
+.home .team-section .team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+.home .team-section .team .card {
+  width: 22%;
+  height: 100%;
+  margin: 1%;
+  padding: 0%;
+  background-color: white;
+  color: white;
+  border: 3.5px solid white;
+  border-radius: 15px;
+}
+.home .team-section .team .card img {
+  border-radius: 14px;
+  margin-bottom: 6%;
+}
+.home .team-section .team .card h2 {
+  margin: 0 8%;
+  color: black;
+}
+.home .team-section .team .card p {
+  margin: 0 8% 4%;
+  color: black;
 }
