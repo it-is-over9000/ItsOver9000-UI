@@ -1,10 +1,24 @@
 let knightHead = document.querySelector('.knight-head');
-console.log(knightHead);
 let knightBody = document.querySelector('.knight-body');
-console.log(knightBody);
+let knightSeperator = document.querySelector('.knight-seperator');
 
-window.addEventListener('load', () => knightHeadAnimation());
-window.addEventListener('load', () => knightBodyAnimation());
+window.addEventListener('load', () => knightSeperatorAnimation());
+
+function knightSeperatorAnimation() {
+	TweenMax.from(knightSeperator, 1, {
+		x: -200,
+		y: 200,
+		opacity: 0,
+		ease: Back.easeOut,
+		onComplete: () => {
+			knightHead.style.opacity = 1;
+			knightBody.style.opacity = 1;
+			knightHeadAnimation();
+			knightBodyAnimation();
+		},
+
+	});
+}
 
 function knightHeadAnimation() {
 	TweenMax.from(knightHead, 2, {

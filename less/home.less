@@ -18,22 +18,29 @@ body, html {
 		align-items: center;
 		
 		.logo {
-			margin-top: 160px;
+			margin-top: 8%;
 			margin-right: 16px;
 			position: relative;
 
 			.knight-head {
 				width: 16rem;
-				position:absolute;
+				position: absolute;
 				transform: scaleX(-1);
+				opacity: 0;
+			}
 
+			.knight-seperator {
+				width: 16rem;
+				position: absolute;
+				z-index: 1;
+				transform: scaleX(-1);
 			}
 
 			.knight-body {
 				width: 16rem;
-				position:relative;
+				// position: relative;
 				transform: scaleX(-1);
-
+				opacity: 0;
 			}
 		}
 
