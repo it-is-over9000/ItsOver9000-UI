@@ -6,13 +6,13 @@
 		display: flex;
 		justify-content: space-around;
 		width: 40%;
-		padding: .2% 0;
+		padding: 0.2% 0;
 		border-bottom: 2.5px solid white;
 		border-bottom-left-radius: 50%;
 		border-bottom-right-radius: 50%;
 		background-color: @homeBG-color;
 		position: fixed;
-		opacity: .95;
+		opacity: .9;
 		z-index: 10;
 
 		a {
@@ -30,6 +30,14 @@
 				margin-bottom: 0;
 				padding-bottom: 1.5px;
 			}
+		}
+
+		@media @mobile {
+			width: 70%;
+		}
+
+		&:hover {
+			opacity: 1;
 		}
 	}
 }
