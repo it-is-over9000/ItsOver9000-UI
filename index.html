@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Untitled</title>
+	<title>It's Over 9000!</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,15 @@
 </head>
 
 <body>
-	<div class="bg-container">
+	<div id="top" class="bg-container">
 
 		<header class="main-nav">
 			<nav class="nav">
-		        <a href="#">Home</a>
-		        <a href="#">Product</a>
-		        <a href="#">Features</a>
-		        <a href="#">Team</a>
-		        <a href="#">Contact</a>
+		        <a href="#top">Home</a>
+		        <!-- <a href="#product-section">About Us</a> -->
+		        <a href="#features-section">Features</a>
+		        <a href="#team-section">Team</a>
+		        <!-- <a href="#">Contact</a> -->
 			</nav>
 		</header>
 		
@@ -58,44 +58,50 @@
 		</div>
 	</div>
 
+	<div class="seperator-1"></div>
+
 	<div class="home">
-		<section class="about-us">
-			<h2 class="about-us-h2">Dicover Your Rank</h2>
+
+		<!-- <section class="about-us">
+			<h2 class="about-us-h2"></h2>
 			<div class="about-us-content">
 				<h3>About Us</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.<span> Read more >></span></p>
+				<p>It's Over 9000 determines your estimated playing strength during different phases of a chess game. Improve your game today!</p>
+				<img src="img/queen.jpg" alt="">
 			</div>
-		</section>
+		</section> -->
 
-		<section class="carousel-container">
-			<h2>Features</h2>
+		<section id="features-section" class="features-section">
+			<h2 class="features-title">Features</h2>
 			<div class="features">
 				<div class="feature feature-1">
-					<h2>Rank Finder</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<h2>Rank Estimator</h2>
+					<h3>Dicover your rank on different phases of a game.<h3>
+					<p>Chess ratings only tell you your estimated overall playing strength. This may show you how good you are on average but not during different phase of a game. Rank Estimator allows you to discover your weaknesses with accuracy and improve.</p>
+					<!-- <img src="img/queen.jpg" alt=""> -->
 				</div>
+
 				<div class="feature feature-2">
-					<h2>Play It Out</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-				</div>
-				<div class="feature feature-3">
 					<h2>Statistics</h2>
+					<h3>Find and analize</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-				</div>
-				<div class="feature feature-4">
-					<h2>Card 4</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-				</div>
-				<div class="carousel">
-					<img src="img/queen.jpg" alt="">
 					<!-- <img src="img/queen.jpg" alt=""> -->
+				</div>
+
+				<div class="feature feature-3">
 					<!-- <img src="img/queen.jpg" alt=""> -->
+					<h2>Play It Out</h2>
+					<h3>What does a perfect game look like?/h3>
+					<p>Play It Out uses AI to determine the best moves possible so you can improve.</p>
 				</div>
 			</div>
 		</section>
+		
+		<div id="team-section" class="seperator-2"></div>
 
 		<section class="team-section">
-			<h2>Our Team</h2>
+			<h2 class="our-team-title">Our Team</h2>
+			<div class="seperator-3"></div>
 			<div class="team">
 				<div class="card card-1">
 					<img src="img/queen.jpg" alt="">
@@ -132,14 +138,19 @@
 					<h2>Card 7</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				</div>
-				
-
 			</div>
+		</section>
+		
+		<section class="back-to-top">
+			<div class="arrows">
+				<img class="arrow arrow-1" src="img/arrow5.png" alt="">
+				<img class="arrow arrow-2" src="img/arrow5.png" alt="">
+			</div>
+			<a class="button" href="#top">Log In</a>
 		</section>
 	</div>
 
 	<footer>
-		
 	</footer>
 </body>
 

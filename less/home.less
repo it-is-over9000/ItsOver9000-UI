@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     margin: 0;
-
 }
 
 .bg-container {
@@ -30,9 +29,7 @@ body, html {
 			width:100%;
 			color: white;
 			font-size: 8rem;
-
 		}
-
 	}
 
 	.logo-btn-container {
@@ -78,6 +75,7 @@ body, html {
 			border: 3.5px solid white;
 			border-radius: 30px;
 			opacity: 0;
+			outline: none;
 
 
 			&:hover {
@@ -92,7 +90,7 @@ body, html {
 		width: 33%;
 
 		.log-in-panel {
-			width: 36%;
+			width: 250px;
 			max-height: 100%;
 			margin-top: 30%;
 			margin-left: 15%;
@@ -133,6 +131,7 @@ body, html {
 				background-color: white;
 				color: @mirage;
 				font-size: 2.5rem;
+				outline: none;
 
 				&:hover {
 				border: 3.5px solid @mirage;
@@ -175,40 +174,44 @@ body, html {
 
 			}
 		}
-	}
+	}//about-us
 
-	.carousel-container {
+	.features-section {
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		// justify-content: center;
-		align-items: center;
-		padding:3% 0;
-		border-top: 4px solid @mirage;
+		// margin: 0 2%;
 
-		h2 {
-			padding: 1% 0;
+		.features-title {
+			width: 100%;
+			padding: 1.5% 0;
+			margin-bottom: 4%;
+			text-align: center;
+			border-bottom: 2.5px solid @mirage;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
 		}
-
+		
 		.features {
-			width: 60%;
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
 
-			.feature {
-				width: 38%;
-				display: none;
-			}
+			margin: 0 10%;			
 			.feature-1 {
-				display: block;
+				width: 100%;
+				
+			}
+
+			.feature-2 {
+				width: 100%;
+				
+			}
+
+			.feature-3 {
+				width: 100%;
+				
 			}
 		}
-
-		.carousel {
-			// height: 100px;
-			width: 60%;
-		}
-	}
+	}//feature-section
 	
 	.team-section{
 		display: flex;
@@ -216,9 +219,19 @@ body, html {
 		align-items: center;
 		background-color: @mirage;
 
-		h2 {
-			margin: 4% 0;
+		.our-team-title {
+			margin-top: -42px;
+			// margin-bottom: 1%;
 			color: white;
+		}
+
+		.seperator-3 {
+			height: 140px;
+			width: 100%;
+			margin-top: 1.5%;
+			border-top: 2.5px solid white;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
 		}
 
 		.team{
@@ -253,5 +266,74 @@ body, html {
 				}
 			}
 		}
+	}//team-section
+
+	.back-to-top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding: 40px 0;
+		background-color: @mirage;
+		
+		.button {
+			height: 50px;
+			width: 160px;
+			padding: 10px 0;
+			font-size: 2.5rem;
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			background-color: @homeBG-color;
+			border: 3.5px solid white;
+			border-radius: 30px;
+			outline: none;
+
+			&:hover {
+				color: @homeBG-color;
+				background-color: white;
+				border: 3.5px solid @homeBG-color;
+			}
+		}
+		
+		.arrows {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: -28px;
+			opacity: 0;
+
+			.arrow {
+				width: 200px;
+				height: 100px;
+				filter: invert(100%);
+			}
+
+			.arrow-2 {
+				margin-top: -90px;
+			}
+		}
 	}
+}//home
+
+.seperator-1 {
+	height: 140px;
+	width: 100%;
+	margin-top: -50px;
+	background-color: @mirage;
+	position: relative;
+	z-index: -1;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.seperator-2 {
+	height: 140px;
+	width: 100%;
+	margin-bottom: -70px;
+	background-color: @mirage;
+	position: relative;
+	z-index: -1;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
 }
