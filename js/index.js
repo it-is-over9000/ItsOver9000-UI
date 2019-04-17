@@ -5,12 +5,15 @@ let leftSection = document.querySelector('.left-section');
 let logInPanel = document.querySelector('.log-in-panel');
 let logInBtn = document.querySelector('.log-in-btn');
 let logo = document.querySelector('.logo');
+let arrows = document.querySelector('.arrows');
 
-window.addEventListener('load', () => knightSeperatorAnimation());
+window.addEventListener('load', () => {knightSeperatorAnimation(); backToTopAnimation();});
 logInBtn.addEventListener('click', () => {
 	logInPanel.style.opacity = 1;
 	logInPanelAnimation();
 });
+// backToTop.addEventListener('click', () => {});
+
 
 function knightSeperatorAnimation() {
 	TweenMax.from(knightSeperator, 1, {
@@ -109,4 +112,14 @@ function rotateKnight() {
 		});
 		knightActive = false;
 	}
+}
+
+function backToTopAnimation() {
+	TweenMax.to(arrows, 1.5, {
+		y: -10,
+		// rotationY: 360,
+		opacity: 1,
+		// ease: Back.easeOut,
+		repeat: -1,
+	});
 }
