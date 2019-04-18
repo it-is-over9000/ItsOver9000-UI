@@ -7,7 +7,6 @@
 
 	.our-team-title {
 		margin-top: -42px;
-		// margin-bottom: 1%;
 		color: white;
 	}
 
@@ -20,7 +19,7 @@
 		border-top-right-radius: 50%;
 	}
 
-	.team{
+	.team {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -31,7 +30,6 @@
 			width: 300px;
 			height: 100%;
 			margin: 0 10px 40px 20px;
-			padding: 0%;
 			background-color: white;
 			color: white;
 			border: 3.5px solid white;
@@ -45,11 +43,22 @@
 			h2 {
 				margin: 0 8%;
 				color: black;
+				font-size: 3rem;
 			}
 
-			p {
+			h3 {
+				font-size: 2.4rem;
+				padding-bottom: 5%;
+				border-bottom: 1px solid @mirage;
+			}
+
+			.content{
 				margin: 0 8% 4%;
-				color: black;
+				color: @mirage;
+			}
+
+			.hidden {
+				display: none;
 			}
 
 			@media @tablet {

@@ -117,9 +117,7 @@ function rotateKnight() {
 function backToTopAnimation() {
 	TweenMax.to(arrows, 1.5, {
 		y: -10,
-		// rotationY: 360,
 		opacity: 1,
-		// ease: Back.easeOut,
 		repeat: -1,
 	});
 }
