@@ -31,7 +31,7 @@ Array.from(cards).map(card => { new Card(card)});
 let nums = [];
 
 //fill the nums array with random numbers (0-100)
-for (let i=0; i<8; i++) {
+for (let i=0; i<cards.length; i++) {
 	nums.push(Math.floor(Math.random()*Math.floor(100)));
 }
 
