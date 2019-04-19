@@ -35,13 +35,26 @@
 			border: 3.5px solid white;
 			border-radius: 15px;
 
-			img {
+			.profile-img {
+				height: 300px;
+				width: 300px;
 				border-radius: 14px;
-				margin-bottom: 6%;
+				background-position: 50% 50%;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+
+			}
+
+			.arrow-down {
+				text-align: center;
+				padding: 0 45%;
+				height: 20px;
+				width: 40px;
+				width: 100%;
 			}
 
 			h2 {
-				margin: 0 8%;
+				margin: 3% 8% 0;
 				color: black;
 				font-size: 3rem;
 			}
@@ -62,8 +75,7 @@
 			}
 
 			&:hover {
-				width: 320px;
-				margin: 0 0px 20px 10px;
+				box-shadow: 0 0 4px 2px white;
 			}
 
 			@media @tablet {
