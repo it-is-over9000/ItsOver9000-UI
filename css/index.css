@@ -314,6 +314,7 @@ html {
   height: 50px;
   width: 160px;
   margin-top: 4%;
+  padding: 10px 0;
   font-size: 2.5rem;
   color: white;
   background-color: #151924;
@@ -321,6 +322,8 @@ html {
   border-radius: 30px;
   opacity: 0;
   outline: none;
+  text-decoration: none;
+  text-align: center;
 }
 .bg-container-content .logo-btn-container .log-in-btn:hover {
   color: #151924;
@@ -637,6 +640,10 @@ html {
 }
 .team-section .team .card .hidden {
   display: none;
+}
+.team-section .team .card:hover {
+  width: 320px;
+  margin: 0 0px 20px 10px;
 }
 @media (max-width: 800px) {
   .team-section .team .card {
