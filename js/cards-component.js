@@ -26,7 +26,8 @@ class Card {
 let cards = document.querySelectorAll('.card');
 Array.from(cards).map(card => { new Card(card)});
 
-//Randomizer - rearranges the order of team members.
+
+/*Randomizer - rearranges the order of team members.*/
 let nums = [];
 
 //fill the nums array with random numbers (0-100)
