@@ -15,6 +15,7 @@ class Card {
    			this.content.classList.toggle('hidden');
    			TweenMax.from(this.content, .5, {
 		        height: 0,
+		        ease:Back.easeOut,
 		    });
    		} else {
 		    this.content.classList.toggle('hidden');
